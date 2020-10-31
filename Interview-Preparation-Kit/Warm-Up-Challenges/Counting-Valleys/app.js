@@ -1,6 +1,6 @@
 function countingValleys(steps, path) {
     let seaLevel = 0;
-    let valleys = -1;
+    let valleys = 0;
     const pathArray = path.split('');
     for(let i=0; i<steps ; i++){
         if(pathArray[i] === 'D'){
@@ -8,7 +8,7 @@ function countingValleys(steps, path) {
         }else if(pathArray[i] === 'U'){
             seaLevel++;
         }
-        if (seaLevel === 0) {
+        if (seaLevel === 0 && pathArray[i] === 'U') {
             valleys++;
         }    
     }
