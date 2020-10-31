@@ -14,3 +14,6 @@ function countingValleys(steps, path) {
     }
     return valleys;
 }
+
+console.log(countingValleys(8, 'UDDDUDUU'));
+//expected output 1
